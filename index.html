@@ -1,71 +1,134 @@
 <!DOCTYPE html>
 <html lang="pl">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio - Mr.Diament</title>
-    <link rel="stylesheet" href="styles.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mr. Diament's Portfolio</title>
+    <link rel="stylesheet" href="styles.css" />
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400&display=swap" rel="stylesheet">
-</head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400&display=swap"
+      rel="stylesheet"
+    />
+  </head>
 
-
-<body>
+  <body>
+    <!-- Welcome screen -->
 
     <div class="overlay">
-        <div class="overlay__container">
-
-        <img src="IMG/1.JPG" alt="" class="overlay__img">
+      <div class="overlay__container">
+        <img src="IMG/1.JPG" alt="" class="overlay__img" />
 
         <div class="overlay__container--intro">
-            <h2>Cześć!</h2>
-            <h2>Jestem Diament</h2>
-            <h3>Oto kolekcja moich wyjściowych zdjęć.</h3>
-            <h3>Kliknij gdziekolwiek, żeby przejść dalej!</h3>
+          <h2>Cześć, tu Diament</h2>
+          <h3>Oto kolekcja moich wyjściowych zdjęć.</h3>
+          <h3>Kliknij gdziekolwiek, żeby przejść dalej!</h3>
         </div>
-        </div>
+      </div>
     </div>
+
+    <!-- Nav bar -->
+
+    <div class="navbar hidden">
+      <div class="navbar__logo">
+        <img src="IMG/diamond.png" alt="" />
+        <span>Mr. Diament's portfolio</span>
+      </div>
+      <div class="navbar__buttons">
+        <button id="button--about">About</button>
+        <button id="button--newsletter">Newsletter</button>
+        <button id="button--gallery">Gallery</button>
+        <button id="button--home">Home</button>
+      </div>
+    </div>
+
+    <!-- Main container that stores pictures -->
 
     <div class="container hidden">
-
-        <div class="heading"> 
-            
-            <h1>Pan Diament - Portfolio</h1>
-            <img src="IMG/diamond.png" alt="" class="">
-
-        </div>
-
-        <ul class="container__gallery">
-            <li class="container__gallery--thumbnail"><img src="IMG/1.jpg" alt=""></li>
-            <li class="container__gallery--thumbnail"><img src="IMG/2.jpg" alt=""></li>
-            <li class="container__gallery--thumbnail"><img src="IMG/3.jpg" alt=""></li>
-            <li class="container__gallery--thumbnail"><img src="IMG/4.jpg" alt=""></li>
-            <li class="container__gallery--thumbnail"><img src="IMG/5.jpg" alt=""></li>
-            <li class="container__gallery--thumbnail"><img src="IMG/6.jpg" alt=""></li>
-            <li class="container__gallery--thumbnail"><img src="IMG/7.jpg" alt=""></li>
-            <li class="container__gallery--thumbnail"><img src="IMG/8.jpg" alt=""></li>
-            <li class="container__gallery--thumbnail"><img src="IMG/9.jpg" alt=""></li>
-            <li class="container__gallery--thumbnail"><img src="IMG/10.jpg" alt=""></li>
-            <li class="container__gallery--thumbnail"><img src="IMG/11.jpg" alt=""></li>
-            <li class="container__gallery--thumbnail"><img src="IMG/12.jpg" alt=""></li>
-        </ul>
+      <!-- Gallery with pictures in a matrix  -->
+      <ul class="container__gallery">
+        <li class="container__gallery--thumbnail">
+          <img src="IMG/1.jpg" alt="" />
+        </li>
+        <li class="container__gallery--thumbnail">
+          <img src="IMG/2.jpg" alt="" />
+        </li>
+        <li class="container__gallery--thumbnail">
+          <img src="IMG/3.jpg" alt="" />
+        </li>
+        <li class="container__gallery--thumbnail">
+          <img src="IMG/4.jpg" alt="" />
+        </li>
+        <li class="container__gallery--thumbnail">
+          <img src="IMG/5.jpg" alt="" />
+        </li>
+        <li class="container__gallery--thumbnail">
+          <img src="IMG/6.jpg" alt="" />
+        </li>
+        <li class="container__gallery--thumbnail">
+          <img src="IMG/7.jpg" alt="" />
+        </li>
+        <li class="container__gallery--thumbnail">
+          <img src="IMG/8.jpg" alt="" />
+        </li>
+        <li class="container__gallery--thumbnail">
+          <img src="IMG/9.jpg" alt="" />
+        </li>
+        <li class="container__gallery--thumbnail">
+          <img src="IMG/10.jpg" alt="" />
+        </li>
+        <li class="container__gallery--thumbnail">
+          <img src="IMG/11.jpg" alt="" />
+        </li>
+        <li class="container__gallery--thumbnail">
+          <img src="IMG/12.jpg" alt="" />
+        </li>
+      </ul>
     </div>
 
+    <!-- Popup that is open when image is presented -->
     <div class="popup hidden">
-        <button class="popup__close">X</button>
-        <img src="" alt="" class="popup__img">
-        <button class="popup__arrow popup__arrow--right">></button>
-        <button class="popup__arrow popup__arrow--left"><</button>
+      <button class="popup__close">X</button>
+      <img src="" alt="" class="popup__img" />
+      <button class="popup__arrow popup__arrow--right">></button>
+      <button class="popup__arrow popup__arrow--left"><</button>
     </div>
 
+    <!-- Newsletter page  -->
+    <div class="newsletter hidden">
+              <img src="IMG/2.jpg" alt="" />
+        <div class="newsletter__info">
+          Jeśli chcesz wiedzieć co u mnie, to koniecznie zapisz się do
+          newslettera!
+        </div>
+      <form action="action="https://formsubmit.io/send/perek.michal.1@gmail.com" method="POST"">
+        <input
+          id="mail"
+          name="mail"
+          type="mail"
+          placeholder="Wpisz swój email"
+        />
+        <input value="Wyślij" type="submit" />
+      </form>
+    </div>
 
+    <!-- About page -->
 
+    <div class="about hidden">
+      <div class="about__container">
+        <img src="IMG/1.jpg" alt="" />
+        <span
+          >Cześć, nazywam się Diament. Mam niecałe trzy lata i zostałem
+          adoptowany z fundacji spod Radomia, która pomaga takim pieskom jak ja.
+          Połowę swojego życia spędziłęm błąkając się w okolicy stacji
+          benzynowej, a teraz, w Krakowie robię karierę fotomodela!</span
+        >
+      </div>
+    </div>
 
     <script src="app.js"></script>
-</body>
+  </body>
 </html>
-
-
