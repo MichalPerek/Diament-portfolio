@@ -28,5 +28,6 @@ Simple website with few pages: home screen / gallery with thumbnails, which pop-
 
  * general code clean up
  * improve resposiveness 
+ * add feature that highlights the current tab user is on
  * add dummy mailing service for newsletter
  * __rewrite with React__
