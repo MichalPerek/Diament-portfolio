@@ -24,6 +24,10 @@ Simple website with few pages: home screen / gallery with thumbnails, which pop-
   
 ![image](https://user-images.githubusercontent.com/100487510/158370016-566c9bd2-401b-4192-baf3-3f44cbd3f1fe.png)
 
+# Current status:
+
+In progress.
+
 # Project to do's:
 
  * general code clean up
