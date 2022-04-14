@@ -1,7 +1,11 @@
 # Diament-portfolio
 
 ## About
-Simple website with few pages: home screen / gallery with thumbnails, which pop-up on click / dummy newsletter sign-up option. 
+Website with portfolio of a dog photomodel named Diament. Showcase of basic HTML / CSS / JS skills. 
+
+## Preview:
+
+https://mystifying-wozniak-77e92c.netlify.app/
 
 ## Home page:
 
@@ -31,7 +35,7 @@ In progress.
 # Project to do's:
 
  * general code clean up
- * improve resposiveness 
+ * improve RWD 
  * add feature that highlights the current tab user is on
  * add dummy mailing service for newsletter
- * __rewrite with React__
+
